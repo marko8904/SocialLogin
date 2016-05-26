@@ -57,7 +57,7 @@ class SocialLogin extends SpecialPage {
 		$this->loginForm = new LoginForm;
 		parent::__construct('SocialLogin');
 		$wgHooks['UserLoadAfterLoadFromSession'][] = $this;
-		wfLoadExtensionMessages('SocialLogin');
+		wfMessage('SocialLogin');
 	}
 
 	// Replace login / register href with Special:SocialLogin
